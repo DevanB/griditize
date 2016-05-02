@@ -12,9 +12,8 @@
 
 ### Overview
 
-
 ### `Grid`
-`Grid` is the outermost component, used to note where the grid container begins and ends. `Grid` accepts two options:
+`Grid` is the outermost component, used to denote where the grid container begins and ends. `Grid` accepts two props:
 
 - `fluid`: used to denote whether the container is a standard 960px wide container or a fluid container. A fluid container expands to the full width of the viewport with minimal padding on either side for aesthetics.
 - `tagName`: HTML element that grid compiles into. Defaults to `div`.
