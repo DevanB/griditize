@@ -1,7 +1,7 @@
 import React from 'react';
 import style from 'flexboxgrid';
 
-export default class Col extends React.Component {
+export default class Column extends React.Component {
   constructor(props) {
     super(props);
     this.classMap = {
@@ -38,7 +38,7 @@ export default class Col extends React.Component {
 
 const ModificatorType = React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.bool]);
 
-Col.propTypes = {
+Column.propTypes = {
   xsmall: ModificatorType,
   small: ModificatorType,
   medium: ModificatorType,

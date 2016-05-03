@@ -5,7 +5,7 @@
 1. Overview
 2. `Grid`
 3. `Row`
-4. `Col`
+4. `Column`
 5. Usage
 6. Contributing
 7. License
@@ -52,8 +52,8 @@ large >= 75rem
 
 - `tagName`: (string) HTML element that row compiles into. Defaults to `div`.
 
-### `Col`
-`Col` is the component used to denote how wide you want a column to be in a row, how offset that column should be in that row, and the direction in which the content flows in the column. `Col` accepts several props:
+### `Column`
+`Column` is the component used to denote how wide you want a column to be in a row, how offset that column should be in that row, and the direction in which the content flows in the column. `Column` accepts several props:
 
 - `xsmall`: (`oneOf([number, bool])`) The number of columns wide at the xsmall viewport, or a boolean to tell the column to auto size it's width at the xsmall viewport.
 
@@ -81,9 +81,9 @@ large >= 75rem
 ```
 <Grid>
 	<Row>
-	  <Col xsmall={12} small={8} medium={6} large={4}>
+	  <Column xsmall={12} small={8} medium={6} large={4}>
       <span>Content</span>
-    </Col>
+    </Column>
 	</Row>
 </Grid>
 ```
@@ -92,9 +92,9 @@ large >= 75rem
 ```
 <Grid>
 	<Row>
-    <Col xsmall={9} xsmallOffset={3}>
+    <Column xsmall={9} xsmallOffset={3}>
       <span>offset</span>
-    </Col>
+    </Column>
   </Row>
 </Grid>
 ```
@@ -103,9 +103,9 @@ large >= 75rem
 ```
 <Grid>
 	<Row>
-    <Col xsmall small>
+    <Column xsmall small>
       <span>Auto sized at xsmall and small viewports</span>
-    </Col>
+    </Column>
   </Row>
 </Grid>
 ```
@@ -114,14 +114,14 @@ large >= 75rem
 ```
 <Grid>
 	<Row>
-    <Col xsmall>
+    <Column xsmall>
       <span>Auto sized</span>
       <Row>
-				<Col xsmall>
+				<Column xsmall>
 					<span>Auto sized and nested</span>
-				</Col>
+				</Column>
       </Row>
-    </Col>
+    </Column>
   </Row>
 </Grid>
 ```
@@ -130,9 +130,9 @@ large >= 75rem
 ```
 <Grid>
 	<Row start="large" center="xsmall" end="small">
-    <Col xsmall={6}>
+    <Column xsmall={6}>
       <span>Starts at large, center at xsmall, ends at small viewport</span>
-    </Col>
+    </Column>
   </Row>
 </Grid>
 ```
@@ -140,9 +140,9 @@ large >= 75rem
 ```
 <Grid>
 	<Row middle="xsmall">
-    <Col xsmall={6}>
+    <Column xsmall={6}>
       <span>Centered in middle of row on xsmall viewports</span>
-    </Col>
+    </Column>
   </Row>
 </Grid>
 ```
@@ -151,15 +151,15 @@ large >= 75rem
 ```
 <Grid>
 	<Row around="xsmall">
-    <Col xsmall={2}>
+    <Column xsmall={2}>
       <span>Equal</span>
-    </Col>
-    <Col xsmall={2}>
+    </Column>
+    <Column xsmall={2}>
       <span>Padding</span>
-    </Col>
-    <Col xsmall={2}>
+    </Column>
+    <Column xsmall={2}>
       <span>Around</span>
-    </Col>
+    </Column>
   </Row>
 </Grid>
 ```
@@ -167,15 +167,15 @@ large >= 75rem
 ```
 <Grid>
 	<Row between="xsmall">
-    <Col xsmall={2}>
+    <Column xsmall={2}>
       <span>Equal</span>
-    </Col>
-    <Col xsmall={2}>
+    </Column>
+    <Column xsmall={2}>
       <span>Padding</span>
-    </Col>
-    <Col xsmall={2}>
+    </Column>
+    <Column xsmall={2}>
       <span>Between</span>
-    </Col>
+    </Column>
   </Row>
 </Grid>
 ```
@@ -184,15 +184,15 @@ large >= 75rem
 ```
 <Grid>
 	<Row reverse>
-    <Col xsmall={4}>
+    <Column xsmall={4}>
       <span>1</span>
-    </Col>
-    <Col xsmall={4}>
+    </Column>
+    <Column xsmall={4}>
       <span>2</span>
-    </Col>
-    <Col xsmall={4}>
+    </Column>
+    <Column xsmall={4}>
       <span>3</span>
-    </Col>
+    </Column>
   </Row>
 </Grid>
 ```
