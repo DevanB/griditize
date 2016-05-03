@@ -1,8 +1,7 @@
 {
   "name": "griditize",
-  "version": "1.0.0",
   "description": "A small set of semantic React components that build grids",
-  "homepage": "https://github.com/devanb/griditize",
+  "homepage": "https://github.com/DevanB/griditize",
   "main": "dist/index.js",
   "author": {
     "name": "Devan G. Beitel",
@@ -10,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devanb/griditize.git"
+    "url": "https://github.com/DevanB/griditize.git"
   },
   "bugs": {
-    "url": "https://github.com/devanb/griditize/issues"
+    "url": "https://github.com/DevanB/griditize/issues"
   },
   "keywords": [
     "grid",
@@ -27,10 +26,12 @@
     "LICENSE"
   ],
   "scripts": {
+    "commit": "git-cz",
     "prebuild": "rimraf dist",
     "build": "babel --plugins 'transform-es2015-modules-umd' --out-dir dist --ignore tests src",
     "lint": "eslint ./src",
-    "lintfix": "eslint ./src --fix"
+    "lintfix": "eslint ./src --fix",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "license": "MIT",
   "dependencies": {
@@ -53,7 +54,8 @@
     "eslint-plugin-jsx-a11y": "^1.0.4",
     "eslint-plugin-react": "^5.0.1",
     "rimraf": "2.5.2",
-    "webpack": "1.13.0"
+    "webpack": "1.13.0",
+    "semantic-release": "^4.3.5"
   },
   "babel": {
     "presets": [
@@ -61,5 +63,8 @@
       "stage-2",
       "react"
     ]
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
